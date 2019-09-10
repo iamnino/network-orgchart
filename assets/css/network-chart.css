@@ -1,0 +1,129 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.network-chart {}
+
+.network-chart #chart-container {
+    height: 100%;
+}
+
+.network-chart #chart-container .orgchart {
+    min-height: 150%;
+    min-width: 100%;
+    background-color: #fafafa;
+    /* background-image: unset !important; */
+    background: linear-gradient(90deg, #f9f9f9 20px, transparent 1px) center,
+        linear-gradient(#f9f9f9 20px, transparent 1px) center,
+        #d1d1d1 !important;
+    background-size: 22px 22px !important;
+    padding: 100px;
+}
+
+.leftLine,
+.topLine,
+.rightLine {
+    border-color: #383838 !important;
+}
+
+.network-chart #chart-container .orgchart .lines .downLine {
+    background-color: #383838 !important;
+}
+
+.network-chart #chart-container .orgchart .node {
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 3px;
+    margin: 0 15px !important;
+    background-color: #FFF;
+    padding: 0px !important;
+    background-color: #F5F5F5;
+    transition: 0.2s;
+    position: relative;
+}
+
+.network-chart #chart-container .orgchart .node:hover {
+    box-shadow: 0px 1px 20px -10px #9E9E9E;
+}
+
+.network-chart #chart-container .orgchart .node::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #424242;
+    border-radius: 50px;
+    top: -5px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.network-chart #chart-container .orgchart .node .title {
+    border-radius: 0px;
+    width: 100%;
+    height: 35px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 0px;
+    position: relative;
+}
+
+.network-chart #chart-container .orgchart .node {
+    /* border: 1px solid red; */
+}
+
+.network-chart #chart-container .orgchart .node .content {
+    height: 120px;
+    border: 0px;
+    padding: 0px;
+}
+
+.network-chart #chart-container .sibling-content {
+    height: 100%;
+}
+
+.network-chart #chart-container .sibling-content .avatar-wrapper {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 6px solid #e7eff2;
+    margin: 0 auto;
+}
+
+.network-chart #chart-container .sibling-content .avatar-wrapper .avatar {
+    width: inherit;
+    height: inherit;
+}
+
+.network-chart #chart-container .sibling-content .user-identifier {
+    font-size: 14px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-weight: bold;
+}
+
+
+.sider-container {
+    background-color: #d72732;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+}
